@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп «Бородинский»</title>
+    <title> Каталог. Барбершоп «Бородинский»</title>
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <img src="img/index-logo.png" width="200" height="100" alt="Барбершоп «Бородинский»">
+          <a href="index.html"><img src="img/index-logo.png" width="200" height="100" alt="Барбершоп «Бородинский»"></a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -19,7 +19,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -36,87 +36,112 @@
       <div class="breadcrumbs">
         <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="catalog.html">Магазин</a>
             </li>
             <li>
-              <a href="#">Средства для ухода</a>
+              <a>Средства для ухода</a>
             </li>
           </ul>
       </div>
       <div class="index=content">
         <div class="index-content-left">
-          <form class="producers">
+          <form>
+            <div class="producers">
             <h2>Производители:</h2>
-            <input type="checkbox" checked> Baxter of California 
-            <input type="checkbox"> Mr Natty 
-            <input type="checkbox" checked> Suavecito 
-            <input type="checkbox"> Malin+Goetz 
-            <input type="checkbox"> Murray's
-            <input type="checkbox" checked> American crew 	
-          </form>
-          <form class="goods-groups">
+            <input type="checkbox" checked name="baxter" id="baxter"> 
+            <label for="baxter">Baxter of California</label> 
+
+            <input type="checkbox" name="natty" id="natty"> 
+            <label for="natty">Mr Natty</label>
+
+            <input type="checkbox" checked name="suavecito" id="suavecito"> 
+            <label for="suavecito">Suavecito</label>
+
+            <input type="checkbox" name="malingoetz" id="malingoetz"> 
+            <label for="malingoetz">Malin+Goetz</label>
+
+            <input type="checkbox" name="murrays" id="murrays"> 
+            <label for="murrays">Murray's</label>
+
+            <input type="checkbox" checked name="american-crew" id="american-crew">
+            <label for="american-crew">American crew</label> 	
+          </div>
+          <div class="goods-groups">
             <h2>Группы товаров:</h2>
             <input type="radio" name="items" value="Бритвенные принадлежности">Бритвенные принадлежности
             <input type="radio" name="items" value="Средства для ухода" checked>Средства для ухода
             <input type="radio" name="items" value="Аксессуары">Аксессуары
+          </div>
+            <input type="submit" value="Показать">
           </form>
-          <a class="btn" href="#">Показать</a>
         </div>
         <div class="index-content-right">
-          <section>
-            <img src="travel-kit.jpeg" width="150" height="100">
-            <p>Набор для путешествий "Baxter of California"</p>
+          <article>
+            <a href="catalog-item-1">
+              <img src="travel-kit.jpeg" width="150" height="100">
+              <p>Набор для путешествий "Baxter of California"</p>
+            </a>
             <div class="price-n-buy">
               <p>2 900 руб.</p>
               <a href="#">Купить</a>
             </div>   	
-          </section>
-          <section>
-            <img src="conditioner.jpeg" width="150" height="100">
-            <p>Увлажняющий кондиционер "Baxter of California"</p>
+          </article>
+          <article>
+            <a href="catalog-item-2">
+              <img src="conditioner.jpeg" width="150" height="100">
+              <p>Увлажняющий кондиционер "Baxter of California"</p>
+            </a>
             <div class="price-n-buy">
               <p>750 руб.</p>
               <a href="#">Купить</a>
             </div>
-          </section>
-          <section>
-            <img src="suavecito-gel.jpeg" width="150" height="100">
-            <p>Гель для волос "Suavecito"</p>
+          </article>
+          <article>
+            <a href="catalog-item-3">
+              <img src="suavecito-gel.jpeg" width="150" height="100">
+              <p>Гель для волос "Suavecito"</p>
+            </a>
             <div class="price-n-buy">
               <p>290 руб.</p>
               <a href="#">Купить</a>
             </div>
-          </section>
-          <section>
-            <img src="clay.jpeg" width="150" height="100">
-            <p>Глина для укладки волос "American crew"</p>
+          </article>
+          <article>
+            <a href="catalog-item-4">
+              <img src="clay.jpeg" width="150" height="100">
+              <p>Глина для укладки волос "American crew"</p>
+            </a>
             <div class="price-n-buy">
               <p>500 руб.</p>
               <a href="#">Купить</a>
             </div>
-          </section>
-          <section>
-            <img src="am-crew-gel.jpeg" width="150" height="100">
-            <p>Гель для волос "American crew"</p>
+          </article>
+          <article>
+            <a href="catalog-item-5">
+              <img src="am-crew-gel.jpeg" width="150" height="100">
+              <p>Гель для волос "American crew"</p>
+            </a>
             <div class="price-n-buy">
               <p>300 руб.</p>
               <a href="#">Купить</a>
             </div>
-          </section>
-          <section>
-            <img src="shaving-kit.jpeg" width="150" height="100">
-            <p>Набор для бритья "Baxter of California"</p>
+          </article>
+          <article>
+            <a href="catalog-item-6">
+              <img src="shaving-kit.jpeg" width="150" height="100">
+              <p>Набор для бритья "Baxter of California"</p>
+            </a>
             <div class="price-n-buy">
               <p>3 900 руб.</p>
               <a href="#">Купить</a>
             </div>
-          </section>
-          <div class="pages">
+          </article>
+          <div class="pagination">
             <a href="#">1</a>
-       	    <a class="active" href="#">2</a>
+            <a class="active" href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
           </div>
@@ -129,7 +154,7 @@
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (495) 666-02-66
+          Телефон: <a href="tel:+7 (495) 666-02-66">+7 (495) 666-02-66</a>
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
